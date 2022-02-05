@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4AE-40-KKm" customClass="ListViewCollectionViewCell" customModule="SampleiOSApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="197" height="278"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="197" height="278"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wwi-GE-13P">
+                        <rect key="frame" x="5" y="5" width="187" height="268"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mazda3_2" translatesAutoresizingMaskIntoConstraints="NO" id="cug-d0-dvE">
+                                <rect key="frame" x="0.0" y="0.0" width="187" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="x1J-3W-7Ab"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="D2A-UX-nVl">
+                                <rect key="frame" x="10" y="190" width="167" height="37.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audi 100 2021" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xD-m2-hBf">
+                                        <rect key="frame" x="0.0" y="0.0" width="167" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33,0000 Lakhs" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="VeS-pO-EKK">
+                                        <rect key="frame" x="0.0" y="22.5" width="167" height="15"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                        <color key="textColor" name="main_color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cug-d0-dvE" firstAttribute="leading" secondItem="wwi-GE-13P" secondAttribute="leading" id="2EL-ee-JaJ"/>
+                            <constraint firstItem="D2A-UX-nVl" firstAttribute="top" secondItem="cug-d0-dvE" secondAttribute="bottom" constant="10" id="6Lh-DE-CQ0"/>
+                            <constraint firstAttribute="trailing" secondItem="D2A-UX-nVl" secondAttribute="trailing" constant="10" id="Aoh-ed-u5S"/>
+                            <constraint firstItem="cug-d0-dvE" firstAttribute="top" secondItem="wwi-GE-13P" secondAttribute="top" id="Lf6-Us-QXp"/>
+                            <constraint firstItem="D2A-UX-nVl" firstAttribute="leading" secondItem="wwi-GE-13P" secondAttribute="leading" constant="10" id="WsD-w0-vGX"/>
+                            <constraint firstAttribute="trailing" secondItem="cug-d0-dvE" secondAttribute="trailing" id="fyZ-Vb-9IM"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="D2A-UX-nVl" secondAttribute="bottom" constant="10" id="wqZ-RB-gPj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="aIn-z5-wP3"/>
+            <constraints>
+                <constraint firstItem="wwi-GE-13P" firstAttribute="leading" secondItem="4AE-40-KKm" secondAttribute="leading" constant="5" id="Phx-rL-03l"/>
+                <constraint firstAttribute="bottom" secondItem="wwi-GE-13P" secondAttribute="bottom" constant="5" id="RyV-J1-mns"/>
+                <constraint firstAttribute="trailing" secondItem="wwi-GE-13P" secondAttribute="trailing" constant="5" id="VQI-bC-HhY"/>
+                <constraint firstItem="wwi-GE-13P" firstAttribute="top" secondItem="4AE-40-KKm" secondAttribute="top" constant="5" id="lrA-K4-bfW"/>
+            </constraints>
+            <size key="customSize" width="197" height="278"/>
+            <connections>
+                <outlet property="bgView" destination="wwi-GE-13P" id="5en-7q-aXK"/>
+                <outlet property="imageView" destination="cug-d0-dvE" id="LaZ-go-Mzl"/>
+                <outlet property="itemTitleLabel" destination="5xD-m2-hBf" id="hXD-bv-Y9Q"/>
+                <outlet property="priceLabel" destination="VeS-pO-EKK" id="Msa-fD-X63"/>
+            </connections>
+            <point key="canvasLocation" x="244.20289855072465" y="148.66071428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="mazda3_2" width="900" height="596"/>
+        <namedColor name="main_color">
+            <color red="0.36100000143051147" green="0.62400001287460327" blue="0.18000000715255737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
