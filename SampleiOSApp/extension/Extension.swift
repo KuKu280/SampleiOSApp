@@ -167,6 +167,34 @@ extension UIImageView {
 
 }
 
+extension UIViewController{
+    
+    func setupBackNavigationBar(LeftButtonAction:Selector,navBarColor:UIColor,navTitle:String) {
+        /// Left Bar Button
+        var image = UIImage(named: "back")
+        image = image?.withRenderingMode(.alwaysOriginal)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style:.plain, target: self, action: LeftButtonAction)
+        
+        navigationItem.title = navTitle
+        
+        if #available(iOS 15, *) {
+            // Navigation Bar background color
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = navBarColor
+            
+            // setup title font color
+            let titleAttribute = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 17, weight: .bold), NSAttributedString.Key.foregroundColor: UIColor.white]
+            appearance.titleTextAttributes = titleAttribute
+            
+            navigationController?.navigationBar.standardAppearance = appearance
+            navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        }
+        
+    }
+    
+}
+
 
 
 

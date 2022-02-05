@@ -18,6 +18,15 @@ class WebViewController: UIViewController {
         setUpWebView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = false
+        setupBackNavigationBar(LeftButtonAction: #selector(backDismiss), navBarColor: navBarColor, navTitle: "Terms & Conditions")
+    }
+    
+    @objc func backDismiss(){
+        navigationController?.popViewController(animated: true)
+    }
+    
     fileprivate func setUpWebView(){
         // loading URL :
         let url = NSURL(string: linkUrl)

@@ -37,6 +37,7 @@ class LoginViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.isNavigationBarHidden = true
+        navigationController?.navigationBar.backgroundColor = .green
     }
     
     fileprivate func setupRX() {
